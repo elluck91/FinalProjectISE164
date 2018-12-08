@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ISE164</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="overflow: hidden;font-family: Roboto,sans-serif;background-color: #eeeeee;color: rgb(51,51,51);max-width: 100%;">
+    <div class="border rounded-0" style="background-color: rgb(255,255,255);height: 72px;width: 100%;">
+        <div class="row" style="height: 72px;margin: 0px;">
+            <div class="col d-lg-flex justify-content-lg-center align-items-lg-center" style="max-width: 20%;">
+                <div class="d-lg-flex justify-content-lg-center align-items-lg-center"><a href="#" style="text-transform: uppercase;padding: 5px 0px;display: block;font-size: 18px;color: #3C4858;text-align: center;font-weight: 400;line-height: 30px;cursor: pointer;text-decoration: none;font-weight: bold;color: inherit;">Partkeepr</a></div>
+            </div>
+            <div class="col d-lg-flex justify-content-lg-start align-items-lg-center" style="max-width: 80%;border: inherit;">
+                <ul class="list-group" style="clear: both;display: block;height: 72px;border: inherit;"></ul>
+            </div>
+            <div class="col d-lg-flex justify-content-lg-end align-items-lg-center"><a class="btn btn-light action-button" role="button" href="#" style="background: #66d7d7;background: #56c6c6;border-radius: 20px;font-size: inherit;color: #fff !important;box-shadow: none;border: none;text-shadow: none;padding: 8px 20px;transition: background-color 0.25s;">Action </a></div>
+        </div>
+    </div>
+    <div class="border rounded-0" style="background-color: rgb(255,255,255);width: 100%;">
+        <div class="row">
+            <div class="col-xl-10" style="font-weight: bold;border-right: 1px solid #dee2e6;max-width: 15%;padding-right: 0px;position: relative;">
+                <ul style="list-style-type: none;padding-left: 10px;padding-top: 10px;width: 100%;">
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Active Components</a></li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Passive Components</a></li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Electromechanical Parts</a></li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Mechanical Parts</a></li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Cables</a></li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Speakers</a></li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Modules</a></li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">PC Accessories</a></li>
+                    <li><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">PCB Materials</a></li>
+                    <li><i class="fa fa-minus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Electronic Parts</a>
+                        <ul style="list-style-type: none;">
+                            <li class="link"><i class="fa fa-minus-circle" style="padding-right: 10px;"></i>Connectors</li>
+                            <li class="category">
+                                <ul style="list-style-type: none;">
+                                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Link</a></li>
+                                    <li class="category"><i class="fa fa-minus-circle" style="padding-right: 10px;"></i>Sockets
+                                        <ul style="list-style-type: none;">
+                                            <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Test Sockets</a></li>
+                                            <li class="category" style="background-color: #e41515;color: rgb(255,255,255);"><i class="fa fa-arrow-circle-right" style="padding-right: 10px;"></i>Precision</li>
+                                            <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Low Cost</a></li>
+                                            <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Premium</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">PCB Connectors</a></li>
+                                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Audio</a></li>
+                                </ul>
+                            </li>
+                            <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Fuses</a></li>
+                            <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Transformers</a></li>
+                        </ul>
+                    </li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Cooking</a></li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Projects</a></li>
+                    <li class="category"><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Household</a></li>
+                </ul>
+                <ul class="list-group" style="display: inline;bottom: 0;position: relative;/*width: 20%;*/">
+                    <li class="list-group-item d-xl-flex justify-content-xl-center align-items-xl-center special"><i class="la la-plus" style="font-size: 32px;margin-right: 15px;"></i><span>ADD ITEM</span></li>
+                    <li class="list-group-item d-xl-flex justify-content-xl-center align-items-xl-center special"><i class="icon-flag" style="font-size: 32px;margin-right: 15px;"></i><span>FLAGGED ITEMS</span></li>
+                </ul>
+            </div>
+            <div class="col" style="padding: 0px;margin-bottom: 30px;">
+                <div style="padding-top: 12px;padding-bottom: 12px;"><a class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" role="button" href="#collapse-1" id="filter" style="margin-left: 5px;">Filters<i class="icon ion-plus-circled" style="padding-left: 5px;"></i></a>
+                    <div
+                        class="collapse" id="collapse-1" style="padding-top: 12px;">
+                        <div style="margin-left: 43px;">
+                            <div class="form-check" style="margin-bottom: 10px;"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label text-center" for="formCheck-1">Only flagged items</label></div>
+                            <p style="float: left;margin-top: 5px;">Name</p>
+                            <div class="dropdown" style="float: left;"><button class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="margin-left: 12px;margin-top: initial;margin-right: 10px;">begins with&nbsp;</button>
+                                <div class="dropdown-menu"
+                                    role="menu"><a class="dropdown-item" role="presentation" href="#">begins with</a><a class="dropdown-item" role="presentation" href="#">contains</a><a class="dropdown-item" role="presentation" href="#">ends with</a></div>
+                            </div><input class="form-control-sm d-xl-flex" type="text" autofocus="" style="margin-left: 10px;">
+                            <p style="margin-top: 15px;float: left;margin-left: -42px;">Location:</p>
+                            <div class="dropdown" style="margin-top: 10px;margin-bottom: 10px;"><button class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="margin-left: 12px;margin-top: initial;margin-right: 10px;">select:</button>
+                                <div class="dropdown-menu"
+                                    role="menu"><a class="dropdown-item" role="presentation" href="#">Tuscaloosa, AL</a><a class="dropdown-item" role="presentation" href="#">Montgomery, AL</a><a class="dropdown-item" role="presentation" href="#">Freemont, CA</a></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="table" style="overflow-y: scroll;max-height: 70%;">
+                <div class="table-responsive text-center d-lg-flex">
+                    <table class="table table-striped table-hover" id="myTable">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th id="name">Name</th>
+                                <th>Description</th>
+                                <th>Location</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>100</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>3</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>3</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>4</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>5</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>6</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>3</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr class="clickable-row">
+                                <td><input type="checkbox"></td>
+                                <td>4</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>5</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>6</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>7</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>Cell 2</td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                </td>
+                                <td>
+                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
+      </div>
+          <div class="modal-body">
+          <div class="form-group">
+        <input class="form-control " type="text" placeholder="Mohsin">
+        </div>
+        <div class="form-group">
+        
+        <input class="form-control " type="text" placeholder="Irshad">
+        </div>
+        <div class="form-group">
+        <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
+    
+        
+        </div>
+      </div>
+          <div class="modal-footer ">
+        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
+      </div>
+        </div>
+    <!-- /.modal-content --> 
+  </div>
+      <!-- /.modal-dialog --> 
+    </div>
+
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+      </div>
+          <div class="modal-body">
+       
+       <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
+       
+      </div>
+        <div class="modal-footer ">
+        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
+      </div>
+        </div>
+    <!-- /.modal-content --> 
+  </div>
+      <!-- /.modal-dialog --> 
+    </div></div>
+            <nav class="d-lg-flex justify-content-lg-center" style="margin-top: 17px;">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                    <li class="page-item"><a class="page-link">1</a></li>
+                    <li class="page-item"><a class="page-link">2</a></li>
+                    <li class="page-item"><a class="page-link">3</a></li>
+                    <li class="page-item"><a class="page-link">4</a></li>
+                    <li class="page-item"><a class="page-link">5</a></li>
+                    <li class="page-item"><a class="page-link" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
