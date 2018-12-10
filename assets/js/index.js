@@ -22,12 +22,13 @@ $("#mytable #checkall").click(function () {
 });
 
 $("#filter").click(function(){
-    var maxHeight = $('#table').css("max-height");
-    if (maxHeight == '70%') {
-        $('#table').css('max-height', '52%');
+    var maxHeight = $('#myTable').css("height");
+    console.log(maxHeight)
+    if (maxHeight == '65%') {
+        $('#myTable').css('height', '55%');
     }
     else {
-        $('#table').css('max-height', '70%');
+        $('#myTable').css('height', '65%');
     }
     
 });
