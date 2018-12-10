@@ -25,22 +25,39 @@ var isMax = true
 
 $("#filter").click(function(){
     if (isMax) {
-        $('#myTable').css('max-height', '65vh');
+        $('#myTable').css('max-height', '54vh');
         isMax = false
     }
     else {
-        $('#myTable').css('max-height', '75vh');
+        $('#myTable').css('max-height', '68vh');
         isMax = true
     }
     
 });
 
 $("#name").click(function(){
-    sortTable(1);
+    sortTable(1, false);
+    
+});
+$("#desc").click(function(){
+    sortTable(2, false);
+    
+});
+$("#location").click(function(){
+    sortTable(3, false);
+    
+});
+$("#price").click(function(){
+    sortTable(4, true);
     
 });
 
-function sortTable(n) {
+$("#quantity").click(function(){
+    sortTable(5, true);
+    
+});
+
+function sortTable(n, isNumber) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("myTable");
   switching = true;
@@ -65,17 +82,36 @@ function sortTable(n) {
       /* Check if the two rows should switch place,
       based on the direction, asc or desc: */
       if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
+          if (isNumber) {
+              if (parseFloat(x.innerHTML) > parseFloat(y.innerHTML)) {
+                  shouldSwitch = true;
+                    break;
+              }
+              
+          }
+          else {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                // If so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                break;
+            }
+          }
+        
       } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
+        if (isNumber) {
+              if (parseFloat(x.innerHTML) < parseFloat(y.innerHTML)) {
+                  shouldSwitch = true;
+                    break;
+              }
+              
+          }
+          else {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                // If so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                break;
+            }
+          }
       }
     }
     if (shouldSwitch) {
@@ -95,3 +131,7 @@ function sortTable(n) {
     }
   }
 }
+
+jQuery("#myTable tbody tr td:not(':nth-child(7), :nth-child(8)')").click(function(){
+window.location.href = "./product_detail.html"
+});

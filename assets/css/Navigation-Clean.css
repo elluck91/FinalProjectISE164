@@ -120,7 +120,6 @@ dl, ol, ul {
 }
 
 .link:hover {
-  display: inline-block;
   background-color: red;
   color: white;
   text-decoration: none;
