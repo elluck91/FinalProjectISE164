@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -32,9 +33,9 @@
             </div>
         </div>
         <div style="background-color: rgb(255,255,255);">
-            <div class="row">
+            <div class="row d-xl-flex">
                 <div class="col-xl-10" style="font-weight: bold;border-right: 1px solid #dee2e6;padding-right: 0px;position: relative;max-width: 20%;float: left;height: 94vh;">
-                    <ul style="overflow-y: auto;list-style-type: none;width: 100%;margin-bottom: 50px;position: relative;padding-left: 40px;padding-top: 20px;">
+                    <ul style="overflow-y: auto;list-style-type: none;width: 100%;margin-bottom: 50px;position: relative;padding-left: 40px;margin-top: 15px;">
                         <li><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Active Components</a></li>
                         <li><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Passive Components</a></li>
                         <li><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Electromechanical Parts</a></li>
@@ -75,254 +76,208 @@
                         <li class="list-group-item d-xl-flex justify-content-xl-center align-items-xl-center special" id="flaggedItems" style="border-left: none;border-right: none;"><i class="icon-flag" style="font-size: 32px;margin-right: 15px;"></i><span>FLAGGED ITEMS</span></li>
                     </ul>
                 </div>
-                <div class="col align-self-center" style="padding: 0px;">
-                    <div style="padding-top: 12px;padding-bottom: 12px;"><a class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" role="button" href="#collapse-1" id="filter" style="margin-left: 5px;">Filters<i class="icon ion-plus-circled" style="padding-left: 5px;"></i></a>
-                        <div
-                            class="collapse" id="collapse-1" style="padding-top: 12px;">
-                            <div style="margin-left: 43px;">
-                                <div class="form-check" style="margin-bottom: 10px;"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label text-center" for="formCheck-1">Only flagged items</label></div>
-                                <p style="float: left;margin-top: 5px;">Name</p>
-                                <div class="dropdown" style="float: left;"><button class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="margin-left: 12px;margin-top: initial;margin-right: 10px;">begins with&nbsp;</button>
-                                    <div
-                                        class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">begins with</a><a class="dropdown-item" role="presentation" href="#">contains</a><a class="dropdown-item" role="presentation" href="#">ends with</a></div>
-                            </div><input class="form-control-sm d-xl-flex" type="text" autofocus="" style="margin-left: 10px;">
-                            <p style="margin-top: 15px;float: left;margin-left: -42px;">Location:</p>
-                            <div class="dropdown" style="margin-top: 10px;margin-bottom: 10px;"><button class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="margin-left: 12px;margin-top: initial;margin-right: 10px;">select:</button>
-                                <div class="dropdown-menu"
-                                    role="menu"><a class="dropdown-item" role="presentation" href="#">Tuscaloosa, AL</a><a class="dropdown-item" role="presentation" href="#">Montgomery, AL</a><a class="dropdown-item" role="presentation" href="#">Freemont, CA</a></div>
+                <div class="col" style="padding: 0px;margin-top: 15px;padding-right: 15px;">
+                    <div class="d-xl-flex align-items-xl-start">
+                        <div class="col">
+                            <div style="width: 70%;padding-bottom: 12px;float: left;padding-top: 12px;"><a class="btn btn-primary" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" role="button" href="#collapse-1" id="filter" style="margin-left: 5px;">Filters<i class="icon ion-plus-circled" style="padding-left: 5px;"></i></a>
+                                <div
+                                    class="collapse show" id="collapse-1" style="padding-top: 12px;">
+                                    <div style="margin-left: 43px;">
+                                        <div class="d-xl-flex align-items-xl-center">
+                                            <div class="form-check d-xl-flex"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label text-center" for="formCheck-1">Only flagged items</label></div>
+                                        </div>
+                                        <div class="d-xl-flex align-items-xl-center" style="margin-top: 10px;">
+                                            <p style="float: left;margin-bottom: 0px;">Name</p>
+                                            <div class="dropdown" style="float: left;"><button class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="margin-left: 12px;margin-right: 10px;">begins with&nbsp;</button>
+                                                <div class="dropdown-menu"
+                                                    role="menu"><a class="dropdown-item" role="presentation" href="#">begins with</a><a class="dropdown-item" role="presentation" href="#">contains</a><a class="dropdown-item" role="presentation" href="#">ends with</a></div>
+                                            </div><input class="form-control-sm d-xl-flex" type="text" autofocus="" style="margin-left: 10px;"></div>
+                                        <div class="d-xl-flex align-items-xl-center" style="margin-top: 10px;margin-bottom: 10px;">
+                                            <p style="margin-top: 0px;float: left;margin-bottom: 0px;">Location:</p>
+                                            <div class="dropdown"><button class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="margin-left: 12px;margin-right: 10px;">select:</button>
+                                                <div class="dropdown-menu"
+                                                    role="menu"><a class="dropdown-item" role="presentation" href="#">Tuscaloosa, AL</a><a class="dropdown-item" role="presentation" href="#">Montgomery, AL</a><a class="dropdown-item" role="presentation" href="#">Freemont, CA</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
+                        </div>
                     </div>
+                    <div class="col d-xl-flex justify-content-xl-end align-items-xl-center" style="padding-top: 12px;padding-bottom: 12px;"><input type="text" id="myInput" placeholder="Search for product..." title="Type in a name"></div>
                 </div>
-            </div>
-            <div>
-                <div class="table-responsive text-center d-lg-flex" style="max-height: 68vh;overflow-y: scroll;">
-                    <table class="table table-striped table-hover" id="myTable">
-                        <thead>
-                            <tr>
-                                <th><input type="checkbox"></th>
-                                <th id="name">Name</th>
-                                <th id="desc">Description</th>
-                                <th id="location">Location</th>
-                                <th id="price">Price</th>
-                                <th id="quantity">Quantity</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Mixed SRAM</td>
-                                <td>With bent pins</td>
-                                <td>San Francisco, CA</td>
-                                <td>10.29</td>
-                                <td>13</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Spin Motor</td>
-                                <td>Direct Drive</td>
-                                <td>Fremont, CA</td>
-                                <td>298.68</td>
-                                <td>4</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>High Voltage Stack</td>
-                                <td>80 Kev Voltage</td>
-                                <td>San Jose, CA</td>
-                                <td>465.20</td>
-                                <td>10</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>IHC Chassis</td>
-                                <td>With power supply</td>
-                                <td>San Francisco, CA</td>
-                                <td>23.05</td>
-                                <td>3</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>2N7000G</td>
-                                <td>MOSFET; N-Ch; VDSS</td>
-                                <td>San Jose, CA</td>
-                                <td>20.05</td>
-                                <td>100</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>ICM 7555</td>
-                                <td>Timer</td>
-                                <td>San Jose, CA</td>
-                                <td>2.99</td>
-                                <td>17</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Carbon film</td>
-                                <td>0,47Ω tolerance</td>
-                                <td>Seattle, WA</td>
-                                <td>0.68</td>
-                                <td>421</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>SL041</td>
-                                <td>Power Resistors</td>
-                                <td>San Diego, CA</td>
-                                <td>2.65</td>
-                                <td>3</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>WSL36373L0</td>
-                                <td>Res Metal Strip</td>
-                                <td>San Jose, CA</td>
-                                <td>6.23</td>
-                                <td>3</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr class="clickable-row">
-                                <td><input type="checkbox"></td>
-                                <td>WSL36</td>
-                                <td>Res Metal Strip 3R</td>
-                                <td>Oak Land, CA</td>
-                                <td>1.22</td>
-                                <td>23</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Tantal-Kondensator</td>
-                                <td>0,1µF 35V 10%</td>
-                                <td>San Jose, CA</td>
-                                <td>23.22</td>
-                                <td>17</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Kondensator</td>
-                                <td>0,1µF 5V 20%</td>
-                                <td>San Jose, CA</td>
-                                <td>3.22</td>
-                                <td>11</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Tempco</td>
-                                <td>3500ppm 0.25W 1kΩ</td>
-                                <td>San Jose, CA</td>
-                                <td>1.42</td>
-                                <td>8</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Motorola MOC70U1</td>
-                                <td>Optical Switch </td>
-                                <td>San Jose, CA</td>
-                                <td>5.42</td>
-                                <td>3</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>5730 LED</td>
-                                <td>Green</td>
-                                <td>San Jose, CA</td>
-                                <td>1.45</td>
-                                <td>310</td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
-                                </td>
-                                <td>
-                                    <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div><div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+                <div>
+                    <div class="table-responsive text-center d-lg-flex" style="max-height: 68vh;overflow-y: scroll;">
+                        <table class="table table-striped table-hover" id="myTable">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th id="name">Name</th>
+                                    <th id="desc">Description</th>
+                                    <th id="location">Location</th>
+                                    <th id="price">Price</th>
+                                    <th id="quantity">Quantity</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>100</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>10</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>100</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>12</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>100</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>2</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>100</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>10</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>100</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;" data-toggle="modal" data-target="#edit"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;" data-toggle="modal" data-target="#delete"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>3</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr class="clickable-row">
+                                    <td><input type="checkbox"></td>
+                                    <td>4</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>6</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 2</td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded border-white d-xl-flex" type="button" style="border: hidden;"><i class="icon ion-edit" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                    <td>
+                                        <p class="d-xl-flex justify-content-xl-center" style="margin-bottom: 0px;margin-top: -5px;"><button class="btn btn-primary btn-sm border rounded" type="button" style="background-color: rgb(255,46,0);border: hidden;"><i class="icon ion-android-delete" style="font-size: 12px;"></i></button></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
       <div class="modal-dialog">
     <div class="modal-content">
           <div class="modal-header">
@@ -381,21 +336,21 @@
   </div>
       <!-- /.modal-dialog --> 
     </div>
-                <p class="text-center" style="font-size: 30px;margin-bottom: 15px;">Showing results 1-15 (52 total).</p>
-                <nav class="d-lg-flex justify-content-lg-center" style="margin-top: 17px;">
-                    <ul class="pagination pagination-lg">
-                        <li class="page-item"><a class="page-link" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                        <li class="page-item active"><a class="page-link">1</a></li>
-                        <li class="page-item"><a class="page-link">2</a></li>
-                        <li class="page-item"><a class="page-link">3</a></li>
-                        <li class="page-item"><a class="page-link">4</a></li>
-                        <li class="page-item"><a class="page-link">5</a></li>
-                        <li class="page-item"><a class="page-link" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                    </ul>
-                </nav>
+                    <p class="text-center" style="font-size: 30px;margin-bottom: 15px;">Showing results 1-15 (52 total).</p>
+                    <nav class="d-lg-flex justify-content-lg-center" style="margin-top: 17px;">
+                        <ul class="pagination pagination-lg">
+                            <li class="page-item"><a class="page-link" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                            <li class="page-item active"><a class="page-link">1</a></li>
+                            <li class="page-item"><a class="page-link">2</a></li>
+                            <li class="page-item"><a class="page-link">3</a></li>
+                            <li class="page-item"><a class="page-link">4</a></li>
+                            <li class="page-item"><a class="page-link">5</a></li>
+                            <li class="page-item"><a class="page-link" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>

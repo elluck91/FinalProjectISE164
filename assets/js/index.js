@@ -6,13 +6,13 @@ jQuery(document).ready(function($) {
 
 $(document).ready(function(){
 $("#mytable #checkall").click(function () {
-        if ($("#mytable #checkall").is(':checked')) {
-            $("#mytable input[type=checkbox]").each(function () {
+        if ($("#myTable #checkall").is(':checked')) {
+            $("#myTable input[type=checkbox]").each(function () {
                 $(this).prop("checked", true);
             });
 
         } else {
-            $("#mytable input[type=checkbox]").each(function () {
+            $("#myTable input[type=checkbox]").each(function () {
                 $(this).prop("checked", false);
             });
         }
@@ -146,3 +146,22 @@ $("#addItem").click(function(){
     
     window.location.href = "./add_items.html"
 });
+
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
