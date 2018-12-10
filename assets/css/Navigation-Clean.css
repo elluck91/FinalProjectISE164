@@ -104,6 +104,8 @@
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover {
   color: #00a9ea;
   border: none;
+  border-bottom: 2px solid;
+  background-color: white;
 }
 
 .list-group-item.d-xl-flex.justify-content-xl-center.align-items-xl-center.special:hover {
