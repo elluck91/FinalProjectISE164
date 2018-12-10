@@ -21,14 +21,16 @@ $("#mytable #checkall").click(function () {
     $("[data-toggle=tooltip]").tooltip();
 });
 
+var isMax = true
+
 $("#filter").click(function(){
-    var maxHeight = $('#myTable').css("height");
-    console.log(maxHeight)
-    if (maxHeight == '65%') {
-        $('#myTable').css('height', '55%');
+    if (isMax) {
+        $('#myTable').css('max-height', '65vh');
+        isMax = false
     }
     else {
-        $('#myTable').css('height', '65%');
+        $('#myTable').css('max-height', '75vh');
+        isMax = true
     }
     
 });
