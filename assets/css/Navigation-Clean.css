@@ -86,11 +86,6 @@
   color: rgb(51,51,51);
 }
 
-.link:hover {
-  color: rgb(51,51,51);
-  text-decoration: none;
-}
-
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
   font-weight: bold;
   color: #9eaab0;
@@ -112,11 +107,30 @@
   background-color: rgba(0,0,0,0.05);
 }
 
-li:hover {
-  background-color: rgba(0,0,0,0.1);
+ol ol, ol ul, ul ol, ul ul:hover {
+  /*background-color: rgba(0,0,0,-0.1);*/
 }
 
-ol ol, ol ul, ul ol, ul ul:hover {
-  background-color: rgba(0,0,0,-0.1);
+dl, ol, ul {
+  padding-left: 20px;
+}
+
+.link:hover {
+  color: rgb(51,51,51);
+}
+
+.link:hover {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+
+.list-group {
+  max-width: none;
+}
+
+.col-xl-10 {
+  padding: 0px;
 }
 
