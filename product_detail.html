@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body style="overflow: auto;font-family: Roboto,sans-serif;background-color: #eeeeee;color: rgb(51,51,51);">
+<body style="overflow: auto;font-family: Roboto,sans-serif;background-color: #eeeeee;color: rgb(51,51,51);overflow-x: hidden;">
     <div>
         <div class="border rounded-0" style="background-color: rgb(255,255,255);width: 100%;">
             <div class="row" style="height: 72px;margin: 0px;">
@@ -31,8 +33,8 @@
         </div>
         <div class="border rounded-0" style="background-color: rgb(255,255,255);">
             <div class="row">
-                <div class="col-xl-10" style="font-weight: bold;border-right: 1px solid #dee2e6;padding-right: 0px;position: relative;max-width: 20%;float: left;">
-                    <ul style="overflow-y: auto;list-style-type: none;width: 100%;margin-bottom: 0px;position: relative;max-height: 90vh;padding-left: 40px;padding-top: 20px;">
+                <div class="col-xl-10" style="font-weight: bold;border-right: 1px solid #dee2e6;padding-right: 0px;position: relative;max-width: 20%;float: left;max-height: 94vh;">
+                    <ul style="overflow-y: auto;list-style-type: none;width: 100%;margin-bottom: 0px;max-height: 90vh;padding-left: 40px;padding-top: 20px;">
                         <li><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Active Components</a></li>
                         <li><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Passive Components</a></li>
                         <li><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Electromechanical Parts</a></li>
@@ -68,9 +70,9 @@
                         <li><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Projects</a></li>
                         <li><i class="fa fa-plus-circle" style="padding-right: 10px;"></i><a href="#" class="link">Household</a></li>
                     </ul>
-                    <ul class="list-group" style="bottom: 0;position: absolute;bottom: 0;left: 0;width: 100%;">
-                        <li class="list-group-item d-xl-flex justify-content-xl-center align-items-xl-center special" style="border-left: none;border-right: none;border-bottom: none;"><i class="la la-plus" style="font-size: 32px;margin-right: 15px;"></i><span>ADD ITEM</span></li>
-                        <li class="list-group-item d-xl-flex justify-content-xl-center align-items-xl-center special" style="border-left: none;border-right: none;"><i class="icon-flag" style="font-size: 32px;margin-right: 15px;"></i><span>FLAGGED ITEMS</span></li>
+                    <ul class="list-group" style="left: 0;width: 100%;position: absolute;bottom: 0;">
+                        <li class="list-group-item d-xl-flex justify-content-xl-center align-items-xl-center special" id="addItem" style="border-left: none;border-right: none;border-bottom: none;"><i class="la la-plus" style="font-size: 32px;margin-right: 15px;"></i><span>ADD ITEM</span></li>
+                        <li class="list-group-item d-xl-flex justify-content-xl-center align-items-xl-center special" id="flaggedItems" style="border-left: none;border-right: none;"><i class="icon-flag" style="font-size: 32px;margin-right: 15px;"></i><span>FLAGGED ITEMS</span></li>
                     </ul>
                 </div>
                 <div class="col" style="padding: 0px;margin-bottom: 30px;max-width: 100%;">

@@ -132,6 +132,17 @@ function sortTable(n, isNumber) {
   }
 }
 
-jQuery("#myTable tbody tr td:not(':nth-child(7), :nth-child(8)')").click(function(){
+jQuery("#myTable tbody tr td:not(':first-child, :nth-child(7), :nth-child(8)')").click(function(){
 window.location.href = "./product_detail.html"
+});
+
+$("#flaggedItems").click(function(){
+    
+    window.location.href = "./flagged_items.html"
+});
+
+
+$("#addItem").click(function(){
+    
+    window.location.href = "./add_items.html"
 });
