@@ -147,11 +147,14 @@ $("#addItem").click(function(){
     window.location.href = "./add_items.html"
 });
 
+<<<<<<< HEAD
 function getIndex() {
 	console.log("here")
 	window.location.href = "./add_items.html"
 }
 
+=======
+>>>>>>> 6610d23d04704f351978b264ecc83b7aea824eb2
 function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
