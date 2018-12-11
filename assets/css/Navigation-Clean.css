@@ -120,7 +120,6 @@ dl, ol, ul {
 }
 
 .link:hover {
-  display: inline-block;
   background-color: red;
   color: white;
   text-decoration: none;
@@ -132,5 +131,16 @@ dl, ol, ul {
 
 .col-xl-10 {
   padding: 0px;
+}
+
+#myInput {
+  background-image: url(../../assets/img/searchicon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
 
